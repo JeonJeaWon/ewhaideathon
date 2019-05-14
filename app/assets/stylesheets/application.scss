@@ -16,10 +16,11 @@
 
 @import url(//fonts.googleapis.com/earlyaccess/notosanskr.css);
 @import url(//fonts.googleapis.com/earlyaccess/nanumpenscript.css);
+@import url(//cdn.rawgit.com/hiun/NanumSquare/master/nanumsquare.css);
 @font-face {
   font-family: "GlossAndBloom";
   src: url("fonts/GlossAndBloom.eot"); 
-  src: url("fonts/GlossAndBloom.eot?#iefix") format("embedded-opentype"), 
+  src: url("fonts/GlossAndBloom.eot?#iefix") format("embedded-opentype"),
     url("fonts/GlossAndBloom.otf") format("opentype"), 
     url("fonts/GlossAndBloom.svg") format("svg"), 
     url("fonts/GlossAndBloom.ttf") format("truetype"), 
@@ -29,48 +30,74 @@
   font-style: normal;
 }
 
+@font-face {
+    font-family: "LietoMe";
+    src: url("fonts/LietoMe.ttf") format("truetype"),
+    url("fonts/LietoMe.otf") format("opentype");
+}
+
+@font-face {
+    font-family: "Fair Prosper";
+    src: url("fonts/Fair Prosper.ttf") format("truetype"),
+}
+
+.back_img{
+    width:100%;
+    position: fixed;
+    top:0;left:0;right:0;
+    margin:auto;
+    z-index:-1;
+}
+
 body {
-    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'NanumSquare', sans-serif !important;
     width: 100%;
     height: 100%;
-    background: linear-gradient( to bottom, #9f7bd5, #bb84bb, #a6a9ca);
+    background-color:#ffefe5;
+    background-image:url(back.jpg);
+    background-repeat:no-repeat;
+    background-size:100%;
 }
 
 #title_font{
-    font-family: 'GlossAndBloom','Noto Sans KR', cursive;
-    font-size: 30pt;
-    color: white;
+    font-family: LietoMe;
+    /*font-family: 'Emblema One', cursive;*/
+    font-size: 80pt;
     display: inline-block;
     margin: auto;
+    color: #1fc8a9;
 }
+
 
 .header{
     text-align: center;
     margin:0px;
     padding-top:50px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     /*background-color:purple;*/
     color: white;
 }
 
 .header_img{
-      display: inline-block;
+    display: inline-block;
 }
 
 #re_navbar{
-    background-color: transparent;
+    background-color:#1AC9B9;
+    opacity:0.8;
     height: 0;
     margin:0 auto;
     width:80vw;
 }
 
 .gnb{
-     margin:0 auto;
-     width:80vw;
-     height:5vh;
-     padding: 0;
-     position: absolute;
-     border-bottom: 1px solid white;
+    background-color:#1AC9B9;
+    opacity:1.0;
+    margin:0 auto;
+    width:100%;
+    height:5vh;
+    padding: 0;
+    position: absolute;
      
 }
 
@@ -81,7 +108,6 @@ body {
 }
 
 .gnb_but{
-    margin:0 auto;
     background-color:transparent;
     border-style: none;
     text-align: center;
@@ -95,7 +121,7 @@ body {
 }
 
 .gnb_but:active{
- color: #8248cf;  
+ color:  #FFEB9C;  
  border-bottom: 2px solid white;
  background-color: transparent !important;
 }
@@ -103,13 +129,18 @@ body {
 .gnb_but:focus{
     background-color: transparent !important;
 }
+ 
+ .gnb_but:hover{
+     background-color:transparent;
+     color:#FFE69E;
+ }
 
 .search_box{
-    border: 1px solid white;
+    border: 3px solid white;
     width: 55vw;
     height: 50px;
     margin: 0 auto;
-    margin-top: 130px;
+    margin-top: 0px;
     color:white;
 }
 
@@ -123,7 +154,7 @@ body {
     margin-top: -70px;
 }
 .searchh{
-    color: white;
+    color: #1AC9B9;
 }
 
 div div div{
@@ -134,7 +165,7 @@ div div div{
     width:  800px;
     height: 300px;
     padding-left: 10px;
-    background: #A380EA;
+    background: #1fc8a9;
 }
 
 hr{
@@ -147,7 +178,7 @@ hr{
 footer {
     font-size: 15px;
     color: white;
-    background-color: #636fa4;
+    background-color: #ead9d0;
     clear: both;
     width: 100%;
     margin-right: auto;

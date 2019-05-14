@@ -1,4 +1,4 @@
-
+<!--3일차 부스가 보이는 페이지 입니다-->
 
 <!-- 장소 목록 -->
 <div class="place">
@@ -22,8 +22,11 @@
         <form action='/home/third' method='get'>
             <button type="submit" class="place_button" name="place" value="gate">정문</button>
         </form>
-        <form action='/home/third' method='get' style="border-bottom: none;">
+        <form action='/home/third' method='get'>
             <button type="submit" class="place_button" name="place" value="saeng">생활관</button>
+        </form>
+         <form action='/home/third' method='get' style="border-bottom: none;">
+            <button type="submit" class="place_button" name="place" value="kyo">교육관</button>
         </form>
     </div>
     <div class="place_img col s9" >
@@ -76,7 +79,9 @@
                                 </li>
                             </div>
                         <% end %>
-                         
+                <div class="sns">
+                    <%= image_tag "sns.png"%>
+                </div>
                         <% @num = @num+1 %>
 
                </div>

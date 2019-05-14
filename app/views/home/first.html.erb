@@ -1,4 +1,4 @@
-
+<!--1일차 부스가 보이는 페이지 입니다-->
 
 <!-- 장소 목록 -->
 <div class="place">
@@ -22,13 +22,17 @@
         <form action='/home/first' method='get'>
             <button type="submit" class="place_button" name="place" value="gate">정문</button>
         </form>
-        <form action='/home/first' method='get' style="border-bottom: none;">
+        <form action='/home/first' method='get'>
             <button type="submit" class="place_button" name="place" value="saeng">생활관</button>
+        </form>
+        <form action='/home/first' method='get' style="border-bottom: none;">
+            <button type="submit" class="place_button" name="place" value="gyo">교육관</button>
         </form>
     </div>
     <div class="place_img col s9" >
         <div class="line_height">
-            <%= image_tag ("building/#{@building}.jpg"), :class => "style_image" %>
+           
+                <%= image_tag ("building/#{@building}.jpg"), :class => "style_image" %>
          </div>
     </div>
 </div>
@@ -75,9 +79,10 @@
                                 </li>
                             </div>
                         <% end %>
-                         
+                <div class="sns">
+                    <%= image_tag "sns.png"%>
+                </div>
                         <% @num = @num+1 %>
-
                </div>
              </div>
  
@@ -86,9 +91,3 @@
         <% end %>
 
 <!--장소 목록 리스트 & 이벤트 리스트 끝-->
-
-
-
-
-
-

@@ -1,3 +1,4 @@
+<!--검색 결과가 뜨는 페이지 입니다-->
 
 <br>
 <div class= "row">
@@ -37,11 +38,12 @@
         %>
         
         <a href = "/home/<%=@date%>?place=<%=f.place%>">
-            <div class="place_menu_lists"> 
-                <p><span style="color:white; font-weight:bold; background-color:#B583EA;padding:5px;">부스 번호</span> <%=f.booth_num%></p>
-                <p><span style="color:white;font-weight:bold; background-color:#B583EA;padding:5px;">부스 이름</span> <%= f.name %></p>
-                <p><span style="color:white;font-weight:bold;background-color:#B583EA;padding:5px;">부스 날짜</span> <%=@date_text%></p>
-                <p><span style="color:white;font-weight:bold;background-color:#B583EA;padding:5px;">부스 위치</span> <%=@place%></p>
+            <div class="place_menu_lists">
+                <br>
+                <p><span style="color:white; font-weight:bold; background-color:#1AC9B9;padding:5px;">부스 번호</span>  <%=f.booth_num%></p>
+                <p><span style="color:white;font-weight:bold; background-color:#1AC9B9;padding:5px;">부스 이름</span>  <%= f.name %></p>
+                <p><span style="color:white;font-weight:bold;background-color:#1AC9B9;padding:5px;">부스 날짜</span>  <%=@date_text%></p>
+                <p><span style="color:white;font-weight:bold;background-color:#1AC9B9;padding:5px;">부스 위치</span>  <%=@place%></p>
             
                 <%if(f.sold_out ==0)%></p>
                     <p id ="<%=f.booth_num%>">&nbsp;&nbsp;<%= f.detail%></p>

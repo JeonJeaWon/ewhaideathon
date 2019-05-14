@@ -6,10 +6,10 @@
 }
 
 .place_menu_lists{
-    font-size:1rem;
-    border-width: 3px;
-    border-color:#B583EA;
-    border-style:dashed;
+    font-size: 1rem;
+    border-width: 4px;
+    border-color: #1AC9B9;
+    border-style: solid;
     margin: 10px 14%;
     text-align: left;
     background-color: white;
@@ -20,6 +20,7 @@
 }
 
 .place_menu_lists:hover{
-    background:#E7E7E7;
+    background:#1AC9B9;
+    /*#E7E7E7;*/
     opacity:0.5;
 }
